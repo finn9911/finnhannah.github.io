@@ -183,6 +183,38 @@ img {vertical-align: middle;}
     li a:hover {
     background-color: black;
 }
+        @viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+        @media screen and (min-width:320px) and (max-width:640px) {
+  
+}
+        #somethingorother {
+  width: 800px ;
+}
+
+@media screen and (max-width: 320px) {
+  /* comes into effect for screens less than or equal to 320 pixels */
+  #somethingorother {
+    width: 120px ;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+  #somethingorother {
+    width: 320px ;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* comes into effect for screens larger than or equal to 481 pixels */
+  #somethingorother {
+    width: 480px ;
+  }
+}
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 360px)" href="portrait.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 361px) and (max-width: 480px)" href="landscape.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" href="desktop.css">
     </style>
         </head>
     <body>
